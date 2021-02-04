@@ -15,6 +15,8 @@ app.get('/getClaimsData', (req, res) => {
   )
 })
 
-app.listen({port: 4600}, () => {
+const PORT = process.env.PORT || 4600
+
+app.listen({port: PORT}, () => {
   console.log('Backedn API is running on port 4600')
 })
